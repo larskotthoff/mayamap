@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EEN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Maya Map</title>
+    <link rel="stylesheet" href="theme/default/style.css" type="text/css"/>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="http://www.openlayers.org/api/OpenLayers.js"></script>
+    <script type="text/javascript" src="http://184.72.218.91/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript">
+        <!--
+        var map, terrain, maya, modern;
+
+        function init() {
+	    OpenLayers.ImgPath = "http://js.mapbox.com/theme/dark/";
+            map = new OpenLayers.Map(('map'), {
+                controls: [
+                    new OpenLayers.Control.Navigation(),
+                    new OpenLayers.Control.PanZoomBar(),
+                    new OpenLayers.Control.LayerSwitcher({'ascending':false}),
+                    new OpenLayers.Control.Permalink(),
+                    new OpenLayers.Control.ScaleLine(),
+                    //new OpenLayers.Control.MousePosition(),
+                    new OpenLayers.Control.KeyboardDefaults(),
+					new OpenLayers.Control.OverviewMap()
+                ],
+                projection: "+init=epsg:3857",
+                //projection: "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs",
+                maxExtent: new OpenLayers.Bounds(-20037508.34,-20037508.34,20037508.34,20037508.34),
+                resolutions: [305.7481130859375,152.87405654296876,76.43702827148438,38.21851413574219,19.109257067871095,9.554628533935547,4.777314266967774,2.388657133483887]
+            });
+            terrain = new OpenLayers.Layer.XYZ("Terrain",
+                    "http://184.72.218.91/tc/terrain/${z}/${x}/${y}.png", {
+                        format: 'image/png',
+                        maxResolution: 305.7481130859375,
+                        units: "m",
+                        zoomOffset: 9,
+                        resolutions: [305.7481130859375,152.87405654296876,76.43702827148438,38.21851413574219,19.109257067871095,9.554628533935547,4.777314266967774,2.388657133483887],
+                        sphericalMercator: true
+            });
+            maya = new OpenLayers.Layer.XYZ("Maya",
+                    "http://184.72.218.91/tc/maya/${z}/${x}/${y}.png", {
+                        format: 'image/png',
+                        zoomOffset: 9,
+                        resolutions: [305.7481130859375,152.87405654296876,76.43702827148438,38.21851413574219,19.109257067871095,9.554628533935547,4.777314266967774,2.388657133483887],
+                        sphericalMercator: true
+            });
+            maya.setIsBaseLayer(false);
+            modern = new OpenLayers.Layer.XYZ("Modern",
+                    "http://184.72.218.91/tc/modern/${z}/${x}/${y}.png", {
+                        format: 'image/png',
+                        zoomOffset: 9,
+                        resolutions: [305.7481130859375,152.87405654296876,76.43702827148438,38.21851413574219,19.109257067871095,9.554628533935547,4.777314266967774,2.388657133483887],
+                        sphericalMercator: true
+            });
+            modern.setIsBaseLayer(false);
+            modern.setVisibility(false);
+
+            var gsat = new OpenLayers.Layer.Google("Satellite", {
+                    type: google.maps.MapTypeId.SATELLITE
+            });
+            gsat.MIN_ZOOM_LEVEL = 9;
+            gsat.MAX_ZOOM_LEVEL = 16;
+            //document.write(gsat.RESOLUTIONS);
+
+            map.addLayers([modern, maya, terrain, gsat]);
+			if(!map.getCenter()) {
+				map.setCenter(new OpenLayers.LonLat(-9912410.84903, 2031482.35538), 2);
+			}
+            map.events.register("changelayer", map, updateLegend)
+			map.events.register("zoomend", map, updateLegend)
+
+            var sketchSymbolizers = {
+                "Point": {
+                    pointRadius: 4,
+                    graphicName: "square",
+                    fillColor: "white",
+                    fillOpacity: 1,
+                    strokeWidth: 1,
+                    strokeOpacity: 1,
+                    strokeColor: "#333333"
+                },
+                "Line": {
+                    strokeWidth: 3,
+                    strokeOpacity: 1,
+                    strokeColor: "#666666",
+                    strokeDashstyle: "dash"
+                },
+                "Polygon": {
+                    strokeWidth: 2,
+                    strokeOpacity: 1,
+                    strokeColor: "#666666",
+                    fillColor: "white",
+                    fillOpacity: 0.3
+                }
+            };
+            var style = new OpenLayers.Style();
+            style.addRules([
+                new OpenLayers.Rule({symbolizer: sketchSymbolizers})
+            ]);
+            var styleMap = new OpenLayers.StyleMap({"default": style});
+            
+            measureControls = {
+                line: new OpenLayers.Control.Measure(
+                    OpenLayers.Handler.Path, {
+                        persist: true,
+                        handlerOptions: {
+                            layerOptions: {styleMap: styleMap}
+                        }
+                    }
+                ),
+                polygon: new OpenLayers.Control.Measure(
+                    OpenLayers.Handler.Polygon, {
+                        persist: true,
+                        handlerOptions: {
+                            layerOptions: {styleMap: styleMap}
+                        }
+                    }
+                )
+            };
+            
+            var control;
+            for(var key in measureControls) {
+                control = measureControls[key];
+                control.events.on({
+                    "measure": handleMeasurements,
+                    "measurepartial": handleMeasurements
+                });
+                map.addControl(control);
+            }
+            
+            document.getElementById('noneToggle').checked = true;
+        }
+        
+        function handleMeasurements(event) {
+            var geometry = event.geometry;
+            var units = event.units;
+            var order = event.order;
+            var measure = event.measure;
+            var element = document.getElementById('output');
+            var out = "";
+            if(order == 1) {
+                out += measure.toFixed(3) + " " + units;
+            } else {
+                out += measure.toFixed(3) + " " + units + "<sup>2</" + "sup>";
+            }
+            element.innerHTML = out;
+        }
+
+        function toggleControl(element) {
+            for(key in measureControls) {
+                var control = measureControls[key];
+                if(element.value == key && element.checked) {
+                    control.activate();
+                } else {
+                    control.deactivate();
+                }
+            }
+        }
+
+        function toggleTools() {
+            $("#toolbox").toggleClass("hidden");
+			updateMap();
+            if($("#toolbox").hasClass("hidden")) {
+                $("#showhidetools").html("show legend/tools");
+            } else {
+                $("#showhidetools").html("hide legend/tools");
+                updateLegend();
+            }
+        }
+        
+        function toggleNav() {
+            $("#nav").toggleClass("hidden");
+			updateMap();
+            if($("#nav").hasClass("hidden")) {
+                $("#showhidenav").html("show navigation");
+            } else {
+                $("#showhidenav").html("hide navigation");
+            }
+        }
+
+	function updateMap() {
+		$("#map").removeClass();
+		$("#footer").removeClass();
+		if($("#toolbox").hasClass("hidden") && $("#nav").hasClass("hidden")) {
+			$("#map").toggleClass("mapFull");
+			$("#footer").toggleClass("footerFull");
+		} else if($("#toolbox").hasClass("hidden")) {
+			$("#map").toggleClass("mapwNav");
+			$("#footer").toggleClass("footerwNav");
+		} else if($("#nav").hasClass("hidden")) {
+			$("#map").toggleClass("mapwTools");
+			$("#footer").toggleClass("footerwTools");
+		} else {
+			$("#map").toggleClass("mapwNavTools");
+			$("#footer").toggleClass("footerwNavTools");
+		}
+	}
+        
+        function updateLegend() {
+            $("#legend-maya").empty();
+            $("#legend-modern").empty();
+            $("#legend-terrain").empty();
+            layers = map.getLayersBy("visibility", true);
+            for(var i = 0; i < layers.length; i++) {
+                if(layers[i].name === "Maya") {
+					if(map.getZoom() >= 5) {
+						$("#legend-maya").load("legend_maya_high.html");
+					} else {
+						$("#legend-maya").load("legend_maya_low.html");
+					}
+                } else if(layers[i].name === "Modern") {
+                    $("#legend-modern").load("legend_modern.html");
+                } else if(layers[i].name === "Terrain") {
+                    $("#legend-terrain").load("legend_terrain.html");
+                }
+            }
+        }
+        // -->
+    </script>
+
+    <style type="text/css" rel="stylesheet">
+		body {
+			background-color: #E0DBD0;	
+			color: #320;
+			font-family: sans-serif;
+		}
+        #map {
+            position: fixed;
+            border: 1px solid black;
+            top: 5px;
+            bottom: 2.2em;
+        }
+        .mapFull { left: 5px; right: 5px; }
+        .mapwTools { left: 5px; right: 200px; }
+        .mapwNav { left: 170px; right: 5px; }
+        .mapwNavTools { left: 170px; right: 200px; }
+        #footer {
+            position: absolute;
+            bottom: 5px;
+            padding: 0;
+            margin: 0;
+            font-size: 0.8em;
+            height: 1.5em;
+	    text-align: center;
+        }
+        .footerFull { left: 5px; right: 5px; }
+        .footerwTools { left: 5px; right: 200px; }
+        .footerwNav { left: 170px; right: 5px; }
+        .footerwNavTools { left: 170px; right: 200px; }
+        #footer > div {
+			display: inline-block;
+			*display: inline; /* For IE7 */
+			width: 33%;
+        }
+        #output {
+            margin: 10px 0 0 0;
+            font-weight: bold;
+            text-align: center;
+        }
+        .olImageLoadError {
+			background-image: url('http://184.72.218.91/dragon.png');
+        }
+		.olControlPermalink a {
+			font-weight: bold;
+			color: #320;
+		}
+		.olControlScaleLine {
+			font-weight: bold;
+		}
+        /* get rid of google copyright notice */
+        .olLayerGoogleCopyright {
+            display: none;
+        }
+        #toolbox {
+            position: fixed;
+            top: 5px;
+            bottom: 5;
+            right: 5px;
+            width: 190px;
+            overflow: auto;
+			font-size: 70%;
+        }
+        #nav {
+            position: fixed;
+            top: 5px;
+            bottom: 5;
+            left: 5px;
+            width: 160px;
+            overflow: auto;
+			font-size: 70%;
+        }
+        .hidden { display: none; }
+        h1 { padding: 0px; margin: 0 0 10px 0; text-align: center; }
+        h2 { padding: 0px; margin: 5px 0 5px 0; }
+		ul {
+			padding-left: 20px;
+			margin: 0px;
+		}
+    </style>
+
+  </head>
+  <body onload="init()">
+    <div id="map" class="mapwNav"></div>
+    <div id="nav">
+        <h1>Navigation</h1>
+		<ul>
+		<li><a href="#" onclick="map.setCenter(new OpenLayers.LonLat(-9912993.68137, 2017666.36252), 6);">La Milpa</a></li>
+		<li><a href="#" onclick="map.setCenter(new OpenLayers.LonLat(-9912410.84903, 2031482.35538), 6);">Nojol Nah</a></li>
+		</ul>
+    </div>
+    <div id="toolbox" class="hidden">
+        <h1>Legend</h1>
+        <div id="legend-terrain"></div>
+        <div id="legend-maya"></div>
+        <div id="legend-modern"></div>
+        <hr/>
+        <h1>Tools</h1>
+        <input type="radio" name="type" value="none" id="noneToggle"
+               onclick="toggleControl(this);" checked="checked" />
+        <label for="noneToggle">navigate</label><br/>
+        <input type="radio" name="type" value="line" id="lineToggle" onclick="toggleControl(this);" />
+        <label for="lineToggle">measure distance</label><br/>
+        <input type="radio" name="type" value="polygon" id="polygonToggle" onclick="toggleControl(this);" />
+        <label for="polygonToggle">measure area</label><br/>
+        <div id="output"></div>
+        <hr/>
+        <h1>Credits</h1>
+        Map by Lars Kotthoff for <a href="http://mayaresearchprogram.org/">Maya Research Program</a>. We are supported by an <a href="http://aws.amazon.com">Amazon Web Services</a> grant.
+		<h2>data &copy;</h2>
+		<ul>
+        <li>NASA/<a href="http://srtm.csi.cgiar.org/">CGIAR-CSI</a> 2004</li>
+        <li><a href="http://www.osm.org/">OpenStreetMap</a> 2011</li>
+        <li>Belize Tropical Forest Studies 2005</li>
+        <li><a href="http://mayaresearchprogram.org/">Maya Research Program</a> 2010</li>
+		</ul>
+    </div>
+    <!--<object id="northarrow" data="north.svg" type="image/svg+xml"></object>-->
+    <div id="footer" class="footerwNav">
+        <div align="left"><a href="#" onclick="toggleNav(); return false;" id="showhidenav">hide navigation</a></div>
+		<div align="center"><a href="mailto:lars@larsko.org">feedback</a> --
+		supported by <a href="http://aws.amazon.com">Amazon Web Services</a></div>
+        <div align="right"><a href="#" onclick="toggleTools(); return false;" id="showhidetools">show legend/tools</a></div>
+    </div>
+  </body>
+</html>
