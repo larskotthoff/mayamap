@@ -11,7 +11,7 @@
         var map, terrain, maya, modern;
 
         function init() {
-	    OpenLayers.ImgPath = "http://js.mapbox.com/theme/dark/";
+        OpenLayers.ImgPath = "http://js.mapbox.com/theme/dark/";
             map = new OpenLayers.Map(('map'), {
                 controls: [
                     new OpenLayers.Control.Navigation(),
@@ -21,7 +21,7 @@
                     new OpenLayers.Control.ScaleLine(),
                     //new OpenLayers.Control.MousePosition(),
                     new OpenLayers.Control.KeyboardDefaults(),
-					new OpenLayers.Control.OverviewMap()
+                    new OpenLayers.Control.OverviewMap()
                 ],
                 projection: "+init=epsg:3857",
                 //projection: "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs",
@@ -63,11 +63,11 @@
             //document.write(gsat.RESOLUTIONS);
 
             map.addLayers([modern, maya, terrain, gsat]);
-			if(!map.getCenter()) {
-				map.setCenter(new OpenLayers.LonLat(-9912410.84903, 2031482.35538), 2);
-			}
+            if(!map.getCenter()) {
+                map.setCenter(new OpenLayers.LonLat(-9912410.84903, 2031482.35538), 2);
+            }
             map.events.register("changelayer", map, updateLegend)
-			map.events.register("zoomend", map, updateLegend)
+            map.events.register("zoomend", map, updateLegend)
 
             var sketchSymbolizers = {
                 "Point": {
@@ -159,7 +159,7 @@
 
         function toggleTools() {
             $("#toolbox").toggleClass("hidden");
-			updateMap();
+            updateMap();
             if($("#toolbox").hasClass("hidden")) {
                 $("#showhidetools").html("show legend/tools");
             } else {
@@ -170,7 +170,7 @@
         
         function toggleNav() {
             $("#nav").toggleClass("hidden");
-			updateMap();
+            updateMap();
             if($("#nav").hasClass("hidden")) {
                 $("#showhidenav").html("show navigation");
             } else {
@@ -178,23 +178,23 @@
             }
         }
 
-	function updateMap() {
-		$("#map").removeClass();
-		$("#footer").removeClass();
-		if($("#toolbox").hasClass("hidden") && $("#nav").hasClass("hidden")) {
-			$("#map").toggleClass("mapFull");
-			$("#footer").toggleClass("footerFull");
-		} else if($("#toolbox").hasClass("hidden")) {
-			$("#map").toggleClass("mapwNav");
-			$("#footer").toggleClass("footerwNav");
-		} else if($("#nav").hasClass("hidden")) {
-			$("#map").toggleClass("mapwTools");
-			$("#footer").toggleClass("footerwTools");
-		} else {
-			$("#map").toggleClass("mapwNavTools");
-			$("#footer").toggleClass("footerwNavTools");
-		}
-	}
+    function updateMap() {
+        $("#map").removeClass();
+        $("#footer").removeClass();
+        if($("#toolbox").hasClass("hidden") && $("#nav").hasClass("hidden")) {
+            $("#map").toggleClass("mapFull");
+            $("#footer").toggleClass("footerFull");
+        } else if($("#toolbox").hasClass("hidden")) {
+            $("#map").toggleClass("mapwNav");
+            $("#footer").toggleClass("footerwNav");
+        } else if($("#nav").hasClass("hidden")) {
+            $("#map").toggleClass("mapwTools");
+            $("#footer").toggleClass("footerwTools");
+        } else {
+            $("#map").toggleClass("mapwNavTools");
+            $("#footer").toggleClass("footerwNavTools");
+        }
+    }
         
         function updateLegend() {
             $("#legend-maya").empty();
@@ -203,11 +203,11 @@
             layers = map.getLayersBy("visibility", true);
             for(var i = 0; i < layers.length; i++) {
                 if(layers[i].name === "Maya") {
-					if(map.getZoom() >= 5) {
-						$("#legend-maya").load("legend_maya_high.html");
-					} else {
-						$("#legend-maya").load("legend_maya_low.html");
-					}
+                    if(map.getZoom() >= 5) {
+                        $("#legend-maya").load("legend_maya_high.html");
+                    } else {
+                        $("#legend-maya").load("legend_maya_low.html");
+                    }
                 } else if(layers[i].name === "Modern") {
                     $("#legend-modern").load("legend_modern.html");
                 } else if(layers[i].name === "Terrain") {
@@ -219,11 +219,11 @@
     </script>
 
     <style type="text/css" rel="stylesheet">
-		body {
-			background-color: #DCDB76;
-			color: #320;
-			font-family: sans-serif;
-		}
+        body {
+            background-color: #DCDB76;
+            color: #320;
+            font-family: sans-serif;
+        }
         #map {
             position: fixed;
             border: 1px solid black;
@@ -241,16 +241,16 @@
             margin: 0;
             font-size: 0.8em;
             height: 1.5em;
-	    text-align: center;
+            text-align: center;
         }
         .footerFull { left: 5px; right: 5px; }
         .footerwTools { left: 5px; right: 200px; }
         .footerwNav { left: 170px; right: 5px; }
         .footerwNavTools { left: 170px; right: 200px; }
         #footer > div {
-			display: inline-block;
-			*display: inline; /* For IE7 */
-			width: 33%;
+            display: inline-block;
+            *display: inline; /* For IE7 */
+            width: 33%;
         }
         #output {
             margin: 10px 0 0 0;
@@ -258,15 +258,15 @@
             text-align: center;
         }
         .olImageLoadError {
-			background-image: url('http://184.72.218.91/dragon.png');
+            background-image: url('http://184.72.218.91/dragon.png');
         }
-		.olControlPermalink a {
-			font-weight: bold;
-			color: #320;
-		}
-		.olControlScaleLine {
-			font-weight: bold;
-		}
+        .olControlPermalink a {
+            font-weight: bold;
+            color: #320;
+        }
+        .olControlScaleLine {
+            font-weight: bold;
+        }
         /* get rid of google copyright notice */
         .olLayerGoogleCopyright {
             display: none;
@@ -278,7 +278,8 @@
             right: 5px;
             width: 190px;
             overflow: auto;
-			font-size: 70%;
+            font-size: 70%;
+            height: 100%;
         }
         #nav {
             position: fixed;
@@ -287,15 +288,16 @@
             left: 5px;
             width: 160px;
             overflow: auto;
-			font-size: 70%;
+            font-size: 70%;
+            height: 100%;
         }
         .hidden { display: none; }
         h1 { padding: 0px; margin: 0 0 10px 0; text-align: center; }
         h2 { padding: 0px; margin: 5px 0 5px 0; }
-		ul {
-			padding-left: 20px;
-			margin: 0px;
-		}
+        ul {
+            padding-left: 20px;
+            margin: 0px;
+        }
     </style>
 
   </head>
@@ -303,9 +305,9 @@
     <div id="map" class="mapwNav"></div>
     <div id="nav">
         <h1>Navigation</h1>
-		<ul>
-		<li><a href="#" onclick="map.setCenter(new OpenLayers.LonLat(-9912410.84903, 2031482.35538), 6);">Nojol Nah</a></li>
-		</ul>
+        <ul>
+        <li><a href="#" onclick="map.setCenter(new OpenLayers.LonLat(-9912410.84903, 2031482.35538), 6);">Nojol Nah</a></li>
+        </ul>
     </div>
     <div id="toolbox" class="hidden">
         <h1>Legend</h1>
@@ -325,20 +327,20 @@
         <hr/>
         <h1>Credits</h1>
         Map by Lars Kotthoff for <a href="http://mayaresearchprogram.org/">Maya Research Program</a>. We are supported by an <a href="http://aws.amazon.com">Amazon Web Services</a> grant.
-		<h2>data &copy;</h2>
-		<ul>
+        <h2>data &copy;</h2>
+        <ul>
         <li>NASA/<a href="http://srtm.csi.cgiar.org/">CGIAR-CSI</a> 2004</li>
         <li><a href="http://www.osm.org/">OpenStreetMap</a> 2011</li>
         <li>Belize Tropical Forest Studies 2005</li>
         <li>Walter R. T. Witschey and Clifford T. Brown, <a href="http://mayagis.smv.org/">The Electronic Atlas of Ancient Maya Sites</a> 2010</li>
         <li><a href="http://mayaresearchprogram.org/">Maya Research Program</a> 2010</li>
-		</ul>
+        </ul>
     </div>
     <!--<object id="northarrow" data="north.svg" type="image/svg+xml"></object>-->
     <div id="footer" class="footerwNav">
         <div align="left"><a href="#" onclick="toggleNav(); return false;" id="showhidenav">hide navigation</a></div>
-		<div align="center"><a href="mailto:lars@larsko.org">feedback</a> --
-		supported by <a href="http://aws.amazon.com">Amazon Web Services</a></div>
+        <div align="center"><a href="mailto:lars@larsko.org">feedback</a> --
+        supported by <a href="http://aws.amazon.com">Amazon Web Services</a></div>
         <div align="right"><a href="#" onclick="toggleTools(); return false;" id="showhidetools">show legend/tools</a></div>
     </div>
   </body>
