@@ -234,16 +234,14 @@
 
     function filterInternal() {
         if($("#search").val().length > 2) {
-            var terms = $("#search").val().toLowerCase().split(" ");
+            term = $("#search").val().toLowerCase();
 
             $("#navigation").find("li").each(function() {
-                found = false;
-                for (var i = 0; i < terms.length; i++) {
-                    if($(this).find("a")[0].innerHTML.search(new RegExp(terms[i], "i")) >= 0) {
-                        found = true;
-                    }
+                if($(this).find("a")[0].innerHTML.search(new RegExp(term, "i")) < 0) {
+                    $(this).css('display', 'none');
+                } else {
+                    $(this).css('display', '');
                 }
-                $(this).css('display', found ? '' : 'none');
             })
         } else if($("#search").val().length == 0) {
             $("#navigation").find("li").each(function() {
