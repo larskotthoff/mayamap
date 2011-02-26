@@ -8,6 +8,8 @@
     <script type="text/javascript" src="http://184.72.218.91/jquery-1.4.4.min.js"></script>
     <script type="text/javascript">
         <!--
+        var searching = false;
+        var timeout;
         var map, terrain, maya, modern;
 
         function init() {
@@ -129,6 +131,7 @@
             }
             
             document.getElementById('noneToggle').checked = true;
+            $("#navigation").load("navigation.html");
         }
         
         function handleMeasurements(event) {
@@ -181,18 +184,21 @@
     function updateMap() {
         $("#map").removeClass();
         $("#footer").removeClass();
+        $("#navigation").empty();
         if($("#toolbox").hasClass("hidden") && $("#nav").hasClass("hidden")) {
             $("#map").toggleClass("mapFull");
             $("#footer").toggleClass("footerFull");
         } else if($("#toolbox").hasClass("hidden")) {
             $("#map").toggleClass("mapwNav");
             $("#footer").toggleClass("footerwNav");
+            $("#navigation").load("navigation.html");
         } else if($("#nav").hasClass("hidden")) {
             $("#map").toggleClass("mapwTools");
             $("#footer").toggleClass("footerwTools");
         } else {
             $("#map").toggleClass("mapwNavTools");
             $("#footer").toggleClass("footerwNavTools");
+            $("#navigation").load("navigation.html");
         }
     }
         
@@ -215,6 +221,37 @@
                 }
             }
         }
+
+    function filter() {
+        if(!searching) {
+            searching = true;
+            timeout = setTimeout(filterInternal, 700);
+        } else {
+            clearTimeout(timeout);
+            timeout = setTimeout(filterInternal, 700);
+        }
+    }
+
+    function filterInternal() {
+        if($("#search").val().length > 2) {
+            var terms = $("#search").val().toLowerCase().split(" ");
+
+            $("#navigation").find("li").each(function() {
+                found = false;
+                for (var i = 0; i < terms.length; i++) {
+                    if($(this).find("a")[0].innerHTML.search(new RegExp(terms[i], "i")) >= 0) {
+                        found = true;
+                    }
+                }
+                $(this).css('display', found ? '' : 'none');
+            })
+        } else if($("#search").val().length == 0) {
+            $("#navigation").find("li").each(function() {
+                $(this).css('display', '');
+            })
+        }
+        searching = false;
+    }
         // -->
     </script>
 
@@ -232,8 +269,8 @@
         }
         .mapFull { left: 5px; right: 5px; }
         .mapwTools { left: 5px; right: 200px; }
-        .mapwNav { left: 170px; right: 5px; }
-        .mapwNavTools { left: 170px; right: 200px; }
+        .mapwNav { left: 190px; right: 5px; }
+        .mapwNavTools { left: 190px; right: 200px; }
         #footer {
             position: absolute;
             bottom: 5px;
@@ -245,8 +282,8 @@
         }
         .footerFull { left: 5px; right: 5px; }
         .footerwTools { left: 5px; right: 200px; }
-        .footerwNav { left: 170px; right: 5px; }
-        .footerwNavTools { left: 170px; right: 200px; }
+        .footerwNav { left: 190px; right: 5px; }
+        .footerwNavTools { left: 190px; right: 200px; }
         #footer > div {
             display: inline-block;
             *display: inline; /* For IE7 */
@@ -274,7 +311,6 @@
         #toolbox {
             position: fixed;
             top: 5px;
-            bottom: 5;
             right: 5px;
             width: 190px;
             overflow: auto;
@@ -284,9 +320,8 @@
         #nav {
             position: fixed;
             top: 5px;
-            bottom: 5;
             left: 5px;
-            width: 160px;
+            width: 180px;
             overflow: auto;
             font-size: 70%;
             height: 100%;
@@ -298,6 +333,9 @@
             padding-left: 20px;
             margin: 0px;
         }
+        li {
+            list-style-position: outside;
+        }
     </style>
 
   </head>
@@ -305,8 +343,9 @@
     <div id="map" class="mapwNav"></div>
     <div id="nav">
         <h1>Navigation</h1>
+        Search <input type="text" id="search" onkeyup="filter()"></input>
         <ul>
-        <li><a href="#" onclick="map.setCenter(new OpenLayers.LonLat(-9912410.84903, 2031482.35538), 6);">Nojol Nah</a></li>
+        <div id="navigation"></div>
         </ul>
     </div>
     <div id="toolbox" class="hidden">
