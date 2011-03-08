@@ -57,14 +57,20 @@
             modern.setIsBaseLayer(false);
             modern.setVisibility(false);
 
-            var gsat = new OpenLayers.Layer.Google("Satellite", {
+            gsat = new OpenLayers.Layer.Google("Satellite", {
                     type: google.maps.MapTypeId.SATELLITE
             });
             gsat.MIN_ZOOM_LEVEL = 9;
             gsat.MAX_ZOOM_LEVEL = 16;
             //document.write(gsat.RESOLUTIONS);
 
-            map.addLayers([modern, maya, terrain, gsat]);
+            annotations = new OpenLayers.Layer.Text("Annotations", {
+                    location: "annotations.txt"
+            });
+            annotations.setIsBaseLayer(false);
+            annotations.setVisibility(false);
+
+            map.addLayers([modern, maya, annotations, terrain, gsat]);
             if(!map.getCenter()) {
                 map.setCenter(new OpenLayers.LonLat(-9912410.84903, 2031482.35538), 2);
             }
