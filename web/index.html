@@ -4,16 +4,17 @@
     <title>Maya Map</title>
     <link rel="stylesheet" href="theme/default/style.css" type="text/css"/>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-    <script type="text/javascript" src="http://184.72.218.91/OpenLayers.js"></script>
-    <script type="text/javascript" src="http://184.72.218.91/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="http://tiles.mayamap.org/OpenLayers.js"></script>
+    <script type="text/javascript" src="http://tiles.mayamap.org/jquery-1.4.4.min.js"></script>
     <script type="text/javascript">
         <!--
         var searching = false;
         var timeout;
         var map, terrain, maya, modern;
+        var selectControl;
 
         function init() {
-        OpenLayers.ImgPath = "http://js.mapbox.com/theme/dark/";
+            OpenLayers.ImgPath = "http://js.mapbox.com/theme/dark/";
             map = new OpenLayers.Map(('map'), {
                 controls: [
                     new OpenLayers.Control.Navigation(),
@@ -31,7 +32,7 @@
                 resolutions: [305.7481130859375,152.87405654296876,76.43702827148438,38.21851413574219,19.109257067871095,9.554628533935547,4.777314266967774,2.388657133483887]
             });
             terrain = new OpenLayers.Layer.XYZ("Terrain",
-                    "http://184.72.218.91/tc/terrain/${z}/${x}/${y}.png", {
+                    "http://tiles.mayamap.org/tc/terrain/${z}/${x}/${y}.png", {
                         format: 'image/png',
                         maxResolution: 305.7481130859375,
                         units: "m",
@@ -40,7 +41,7 @@
                         sphericalMercator: true
             });
             maya = new OpenLayers.Layer.XYZ("Maya",
-                    "http://184.72.218.91/tc/maya/${z}/${x}/${y}.png", {
+                    "http://tiles.mayamap.org/tc/maya/${z}/${x}/${y}.png", {
                         format: 'image/png',
                         zoomOffset: 9,
                         resolutions: [305.7481130859375,152.87405654296876,76.43702827148438,38.21851413574219,19.109257067871095,9.554628533935547,4.777314266967774,2.388657133483887],
@@ -48,7 +49,7 @@
             });
             maya.setIsBaseLayer(false);
             modern = new OpenLayers.Layer.XYZ("Modern",
-                    "http://184.72.218.91/tc/modern/${z}/${x}/${y}.png", {
+                    "http://tiles.mayamap.org/tc/modern/${z}/${x}/${y}.png", {
                         format: 'image/png',
                         zoomOffset: 9,
                         resolutions: [305.7481130859375,152.87405654296876,76.43702827148438,38.21851413574219,19.109257067871095,9.554628533935547,4.777314266967774,2.388657133483887],
@@ -64,11 +65,19 @@
             gsat.MAX_ZOOM_LEVEL = 16;
             //document.write(gsat.RESOLUTIONS);
 
-            annotations = new OpenLayers.Layer.Text("Annotations", {
-                    location: "annotations.txt"
+            annotations = new OpenLayers.Layer.Vector("Annotations", {
+                strategies: [new OpenLayers.Strategy.Fixed({preload: true})],
+                protocol: new OpenLayers.Protocol.HTTP({
+                    url: "annotations.txt",
+                    format: new OpenLayers.Format.Text()
+                })
             });
             annotations.setIsBaseLayer(false);
             annotations.setVisibility(false);
+            selectControl = new OpenLayers.Control.SelectFeature(annotations,
+                {onSelect: onFeatureSelect, onUnselect: onFeatureUnselect});
+            map.addControl(selectControl);
+            selectControl.activate();
 
             map.addLayers([modern, maya, annotations, terrain, gsat]);
             if(!map.getCenter()) {
@@ -138,6 +147,40 @@
             
             document.getElementById('noneToggle').checked = true;
             $("#navigation").load("navigation.html");
+        }
+
+        function onPopupClose(evt) {
+            selectControl.unselect(this.feature);
+        }
+
+        function onFeatureSelect(feature) {
+            alert("select");
+            if(feature.popup) {
+                onFeatureUnselect(feature);
+                selectControl.unselect(feature);
+            } else {
+                popup = new OpenLayers.Popup.Anchored("annotationPopup",
+                             feature.geometry.getBounds().getCenterLonLat(),
+                             null,
+                             "<h2>"+feature.attributes.title + "</h2>" +
+                             feature.attributes.description,
+                             null, true, onPopupClose);
+                popup.maxSize = new OpenLayers.Size(300, 1000);
+                popup.autoSize = true;
+                popup.keepInMap = true;
+                feature.popup = popup;
+                popup.feature = feature;
+                map.addPopup(popup);
+            }
+        }
+
+        function onFeatureUnselect(feature) {
+            if(feature.popup) {
+                popup.feature = null;
+                map.removePopup(feature.popup);
+                feature.popup.destroy();
+                feature.popup = null;
+            }
         }
         
         function handleMeasurements(event) {
@@ -299,7 +342,7 @@
             text-align: center;
         }
         .olImageLoadError {
-            background-image: url('http://184.72.218.91/dragon.png');
+            background-image: url('http://tiles.mayamap.org/dragon.png');
         }
         .olControlPermalink a {
             font-weight: bold;
