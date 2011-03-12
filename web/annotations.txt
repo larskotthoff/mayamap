@@ -185,7 +185,7 @@ Boletn de la Sistemas Nacionales Estadstico y de Informacin Geogrphica 2(2):141-
 -9872491.94061	2400414.17593	Biltun Ha	Covarrubias Reyna, M. and R. Burgos Villanueva, 2008, Geografa politca de la provincia de Ah Kin Chel. Boletin del Sistema Nacional de Informacin Estadistca y Geografa de INEGII 1(1):119.	marker.png
 -9898225.76011	1945066.1357	Blackman Eddy	Ashmore, W., J. Yaeger and C. Robin, 1981, Commoner Sense: Late and Terminal Classic Social Strategies in the Xunantunich Area.Fig. 14.1. In The Terminal Classic in the Maya Lowlands, edited by Demarest, Rice and Rice	marker.png
 -9940642.36479	2048167.38553	Blasillo	prajc, Ivan FAMSI Report 01014 Fig 1	marker.png
--9892963.1468	2024677.24466	Blue Creek	Witschey, W. R. T., 2009, Sites accessed and downloaded from Google Earth.	marker.png
+-9895863.1682	2021522.05399	Blue Creek	Witschey, W. R. T., 2009, Sites accessed and downloaded from Google Earth.	marker.png
 -9891370.70927	2025434.74766	Blue Creek Caves	Blom, F., O. G. Ricketson Jr., E. Kramer and S. K. Lowe, 1940, Archaeological Sites in the Maya area. 1940 ed. Middle American Research Institute, Tulane University of Louisiana, New Orleans.	marker.png
 -9976811.21365	1942240.29712	Bobal	1991, Mapa Arqueolgico de la Repblica de Guatemala. Instituto Geographico Militar, Ministerio de la Defensa Naciona; Departamento de Monumentos Prehispanicos y Coloniales, Instituto de Antropologia e Historia de Guatemala, Guatemala C.A.	marker.png
 -9893763.53394	2135421.81458	Bobal	Cortes de Brasdefer, F., 1984, El Registro de Sitios Arqueologicos en Quintana Roo. Boletin de la Escuela de Ciencas Antropologicos de la Universidad Autonoma de Yucatan 12(68):13-20.	marker.png
