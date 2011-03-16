@@ -12,6 +12,7 @@
         var timeout;
         var map, terrain, maya, modern;
         var selectControl;
+        var measurePopup;
 
         function init() {
             OpenLayers.ImgPath = "http://js.mapbox.com/theme/dark/";
@@ -128,6 +129,8 @@
             )
             linem.events.on({
                 "measure": handleMeasurements,
+                "measurepartial": deleteMeasurePopup,
+                "deactivate": deleteMeasurePopup
             });
             aream = new OpenLayers.Control.Measure(
                     OpenLayers.Handler.Polygon, {
@@ -141,6 +144,8 @@
             )
             aream.events.on({
                 "measure": handleMeasurements,
+                "measurepartial": deleteMeasurePopup,
+                "deactivate": deleteMeasurePopup
             });
 
             std = new OpenLayers.Control.MouseDefaults({title:'Move and zoom'});
@@ -161,7 +166,7 @@
                 onFeatureUnselect(feature);
                 selectControl.unselect(feature);
             } else {
-                popup = new OpenLayers.Popup.Anchored("annotationPopup",
+                popup = new OpenLayers.Popup.AnchoredBubble("annotationPopup",
                              feature.geometry.getBounds().getCenterLonLat(),
                              null,
                              "<h2>"+feature.attributes.title + "</h2>" +
@@ -184,6 +189,14 @@
                 feature.popup = null;
             }
         }
+
+        function deleteMeasurePopup() {
+            if(measurePopup) {
+                map.removePopup(measurePopup);
+                measurePopup.destroy();
+                measurePopup = null;
+            }
+        }
         
         function handleMeasurements(event) {
             geometry = event.geometry;
@@ -197,14 +210,14 @@
                 out += measure.toFixed(3) + " " + units + "<sup>2</" + "sup>";
             }
             out += "</strong>";
-            popup = new OpenLayers.Popup.Anchored("measure",
+            measurePopup = new OpenLayers.Popup.AnchoredBubble("measure",
                          geometry.getBounds().getCenterLonLat(),
                          null, out,
                          null, true, null);
-            popup.maxSize = new OpenLayers.Size(300, 1000);
-            popup.autoSize = true;
-            popup.keepInMap = true;
-            map.addPopup(popup);
+            measurePopup.maxSize = new OpenLayers.Size(300, 1000);
+            measurePopup.autoSize = true;
+            measurePopup.keepInMap = true;
+            map.addPopup(measurePopup);
         }
 
         function toggleTools() {
@@ -254,7 +267,7 @@
             $("#legend-modern").empty();
             $("#legend-terrain").empty();
             layers = map.getLayersBy("visibility", true);
-            for(var i = 0; i < layers.length; i++) {
+            for(i = 0; i < layers.length; i++) {
                 if(layers[i].name === "Maya") {
                     if(map.getZoom() >= 5) {
                         $("#legend-maya").load("legend_maya_high.html");
