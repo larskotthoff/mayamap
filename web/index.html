@@ -211,9 +211,9 @@
             $("#toolbox").toggleClass("hidden");
             updateMap();
             if($("#toolbox").hasClass("hidden")) {
-                $("#showhidetools").html("show legend/tools");
+                $("#showhidetools").html("show legend");
             } else {
-                $("#showhidetools").html("hide legend/tools");
+                $("#showhidetools").html("hide legend");
                 updateLegend();
             }
         }
@@ -439,7 +439,7 @@
         <div align="left"><a href="#" onclick="toggleNav(); return false;" id="showhidenav">hide navigation</a></div>
         <div align="center"><a href="mailto:lars@larsko.org">feedback</a> &mdash;
         supported by <a href="http://aws.amazon.com">Amazon Web Services</a></div>
-        <div align="right"><a href="#" onclick="toggleTools(); return false;" id="showhidetools">show legend/tools</a></div>
+        <div align="right"><a href="#" onclick="toggleTools(); return false;" id="showhidetools">show legend</a></div>
     </div>
   </body>
 </html>
