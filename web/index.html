@@ -86,7 +86,7 @@
             map.events.register("changelayer", map, updateLegend)
             map.events.register("zoomend", map, updateLegend)
 
-            var sketchSymbolizers = {
+            sketchSymbolizers = {
                 "Point": {
                     pointRadius: 4,
                     graphicName: "square",
@@ -110,42 +110,45 @@
                     fillOpacity: 0.3
                 }
             };
-            var style = new OpenLayers.Style();
+            style = new OpenLayers.Style();
             style.addRules([
                 new OpenLayers.Rule({symbolizer: sketchSymbolizers})
             ]);
-            var styleMap = new OpenLayers.StyleMap({"default": style});
+            styleMap = new OpenLayers.StyleMap({"default": style});
             
-            measureControls = {
-                line: new OpenLayers.Control.Measure(
+            linem = new OpenLayers.Control.Measure(
                     OpenLayers.Handler.Path, {
+                        displayClass: "measureLength",
                         persist: true,
+                        title: "Measure length",
                         handlerOptions: {
                             layerOptions: {styleMap: styleMap}
                         }
                     }
-                ),
-                polygon: new OpenLayers.Control.Measure(
+            )
+            linem.events.on({
+                "measure": handleMeasurements,
+            });
+            aream = new OpenLayers.Control.Measure(
                     OpenLayers.Handler.Polygon, {
+                        displayClass: "measureArea",
                         persist: true,
+                        title: "Measure area",
                         handlerOptions: {
                             layerOptions: {styleMap: styleMap}
                         }
                     }
-                )
-            };
+            )
+            aream.events.on({
+                "measure": handleMeasurements,
+            });
+
+            std = new OpenLayers.Control.MouseDefaults({title:'Move and zoom'});
+
+            panel = new OpenLayers.Control.Panel({defaultControl: std});
+            panel.addControls([aream, linem, std]);
+            map.addControl(panel);
             
-            var control;
-            for(var key in measureControls) {
-                control = measureControls[key];
-                control.events.on({
-                    "measure": handleMeasurements,
-                    "measurepartial": handleMeasurements
-                });
-                map.addControl(control);
-            }
-            
-            document.getElementById('noneToggle').checked = true;
             $("#navigation").load("navigation.html");
         }
 
@@ -183,29 +186,25 @@
         }
         
         function handleMeasurements(event) {
-            var geometry = event.geometry;
-            var units = event.units;
-            var order = event.order;
-            var measure = event.measure;
-            var element = document.getElementById('output');
-            var out = "";
+            geometry = event.geometry;
+            units = event.units;
+            order = event.order;
+            measure = event.measure;
+            out = "<strong>";
             if(order == 1) {
                 out += measure.toFixed(3) + " " + units;
             } else {
                 out += measure.toFixed(3) + " " + units + "<sup>2</" + "sup>";
             }
-            element.innerHTML = out;
-        }
-
-        function toggleControl(element) {
-            for(key in measureControls) {
-                var control = measureControls[key];
-                if(element.value == key && element.checked) {
-                    control.activate();
-                } else {
-                    control.deactivate();
-                }
-            }
+            out += "</strong>";
+            popup = new OpenLayers.Popup.Anchored("measure",
+                         geometry.getBounds().getCenterLonLat(),
+                         null, out,
+                         null, true, null);
+            popup.maxSize = new OpenLayers.Size(300, 1000);
+            popup.autoSize = true;
+            popup.keepInMap = true;
+            map.addPopup(popup);
         }
 
         function toggleTools() {
@@ -335,13 +334,8 @@
             *display: inline; /* For IE7 */
             width: 33%;
         }
-        #output {
-            margin: 10px 0 0 0;
-            font-weight: bold;
-            text-align: center;
-        }
         .olImageLoadError {
-            background-image: url('http://tiles.mayamap.org/dragon.png');
+            background-image: url('http://tiles.mayamap.org/theme/default/img/dragon.png');
         }
         .olControlPermalink a {
             font-weight: bold;
@@ -353,6 +347,34 @@
         /* get rid of google copyright notice */
         .olLayerGoogleCopyright {
             display: none;
+        }
+        .olControlPanel div { 
+            position: relative;
+            display: block;
+            float: right;
+            width:  24px;
+            height: 22px;
+            margin: 5px;
+            left: 50px;
+            background-color: white;
+        }
+        .olControlPanel .olControlMouseDefaultsItemActive { 
+            background-image: url("http://tiles.mayamap.org/theme/default/img/pan_on.png");
+        }
+        .olControlPanel .olControlMouseDefaultsItemInactive { 
+            background-image: url("http://tiles.mayamap.org/theme/default/img/pan_off.png");
+        }
+        .olControlPanel .measureLengthItemActive { 
+          background-image: url("http://tiles.mayamap.org/theme/default/img/draw_line_on.png");
+        }
+        .olControlPanel .measureLengthItemInactive { 
+          background-image: url("http://tiles.mayamap.org/theme/default/img/draw_line_off.png");
+        }
+        .olControlPanel .measureAreaItemActive { 
+          background-image: url("http://tiles.mayamap.org/theme/default/img/draw_polygon_on.png");
+        }
+        .olControlPanel .measureAreaItemInactive { 
+          background-image: url("http://tiles.mayamap.org/theme/default/img/draw_polygon_off.png");
         }
         #toolbox {
             position: fixed;
@@ -399,16 +421,6 @@
         <div id="legend-terrain"></div>
         <div id="legend-maya"></div>
         <div id="legend-modern"></div>
-        <hr/>
-        <h1>Tools</h1>
-        <input type="radio" name="type" value="none" id="noneToggle"
-               onclick="toggleControl(this);" checked="checked" />
-        <label for="noneToggle">navigate</label><br/>
-        <input type="radio" name="type" value="line" id="lineToggle" onclick="toggleControl(this);" />
-        <label for="lineToggle">measure distance</label><br/>
-        <input type="radio" name="type" value="polygon" id="polygonToggle" onclick="toggleControl(this);" />
-        <label for="polygonToggle">measure area</label><br/>
-        <div id="output"></div>
         <hr/>
         <h1>Credits</h1>
         Map by Lars Kotthoff for <a href="http://mayaresearchprogram.org/">Maya Research Program</a>. We are supported by an <a href="http://aws.amazon.com">Amazon Web Services</a> grant.
