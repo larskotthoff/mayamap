@@ -9,10 +9,11 @@
     <script type="text/javascript">
         <!--
         var searching = false;
-        var timeout;
+        var searchTimeout;
         var map, terrain, maya, modern;
         var selectControl;
         var measurePopup;
+        var vControls;
 
         function init() {
             OpenLayers.ImgPath = "http://js.mapbox.com/theme/dark/";
@@ -156,6 +157,19 @@
             map.addControl(panel);
             
             $("#navigation").load("navigation.html");
+            vControls = $("[id^=OpenLayers.Control.]").not("[id*=ScaleLine]");
+            map.events.on({
+                "mouseover": showControls,
+                "mouseout": hideControls
+            });
+        }
+
+        function hideControls() {
+            vControls.hide();
+        }
+
+        function showControls() {
+            vControls.show();
         }
 
         function onPopupClose(evt) {
@@ -263,33 +277,33 @@
         }
     }
         
-        function updateLegend() {
-            $("#legend-maya").empty();
-            $("#legend-modern").empty();
-            $("#legend-terrain").empty();
-            layers = map.getLayersBy("visibility", true);
-            for(i = 0; i < layers.length; i++) {
-                if(layers[i].name === "Maya") {
-                    if(map.getZoom() >= 5) {
-                        $("#legend-maya").load("legend_maya_high.html");
-                    } else {
-                        $("#legend-maya").load("legend_maya_low.html");
-                    }
-                } else if(layers[i].name === "Modern") {
-                    $("#legend-modern").load("legend_modern.html");
-                } else if(layers[i].name === "Terrain") {
-                    $("#legend-terrain").load("legend_terrain.html");
+    function updateLegend() {
+        $("#legend-maya").empty();
+        $("#legend-modern").empty();
+        $("#legend-terrain").empty();
+        layers = map.getLayersBy("visibility", true);
+        for(i = 0; i < layers.length; i++) {
+            if(layers[i].name === "Maya") {
+                if(map.getZoom() >= 5) {
+                    $("#legend-maya").load("legend_maya_high.html");
+                } else {
+                    $("#legend-maya").load("legend_maya_low.html");
                 }
+            } else if(layers[i].name === "Modern") {
+                $("#legend-modern").load("legend_modern.html");
+            } else if(layers[i].name === "Terrain") {
+                $("#legend-terrain").load("legend_terrain.html");
             }
         }
+    }
 
     function filter() {
         if(!searching) {
             searching = true;
-            timeout = setTimeout(filterInternal, 700);
+            searchTimeout = setTimeout(filterInternal, 700);
         } else {
-            clearTimeout(timeout);
-            timeout = setTimeout(filterInternal, 700);
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(filterInternal, 700);
         }
     }
 
@@ -408,7 +422,7 @@
             font-size: 70%;
             height: 100%;
         }
-        .hidden { display: none; }
+        .hidden { display: none; visibility: hidden; }
         h1 { padding: 0px; margin: 0 0 10px 0; text-align: center; }
         h2 { padding: 0px; margin: 5px 0 5px 0; }
         ul {
