@@ -166,10 +166,12 @@
 
         function hideControls() {
             vControls.hide();
+            $("#north").show();
         }
 
         function showControls() {
             vControls.show();
+            $("#north").hide();
         }
 
         function onPopupClose(evt) {
@@ -385,6 +387,14 @@
             margin: 5px;
             left: 50px;
         }
+        #north {
+            position: fixed;
+            margin: 5px;
+            height: 64px;
+            width: 64px;
+            z-index: 1000;
+            display: none;
+        }
         .olControlPanel .olControlMouseDefaultsItemActive { 
             background-image: url("http://tiles.mayamap.org/theme/default/img/pan_on.png");
         }
@@ -435,7 +445,9 @@
 
   </head>
   <body onload="init()">
-    <div id="map" class="mapwNav"></div>
+    <div id="map" class="mapwNav">
+        <img id="north" src="http://tiles.mayamap.org/theme/default/img/north.png"/>
+    </div>
     <div id="nav">
         <h1>Navigation</h1>
         Search <input type="text" id="search" onkeyup="filter()"></input>
@@ -461,7 +473,6 @@
         <li><a href="http://mayaresearchprogram.org/">Maya Research Program</a> 2010</li>
         </ul>
     </div>
-    <!--<object id="northarrow" data="north.svg" type="image/svg+xml"></object>-->
     <div id="footer" class="footerwNav">
         <div align="left"><a href="#" onclick="toggleNav(); return false;" id="showhidenav">hide navigation</a></div>
         <div align="center"><a href="mailto:lars@larsko.org">feedback</a> &mdash;
