@@ -156,11 +156,16 @@
             panel.addControls([aream, linem, std]);
             map.addControl(panel);
             
-            $("#navigation").load("navigation.html");
             vControls = $("[id^=OpenLayers.Control.]").not("[id*=ScaleLine]");
             map.events.on({
                 "mouseover": showControls,
                 "mouseout": hideControls
+            });
+
+            $.getJSON('sites.json', function(data) {
+              $.each(data, function(id, l) {
+                $("#navigation").append('<li><a href="#" onclick="map.setCenter(new OpenLayers.LonLat(' + l[1] + ',' + l[2] + '), 5);">' + l[0] + '</a></li>');
+              });
             });
         }
 
@@ -261,21 +266,18 @@
     function updateMap() {
         $("#map").removeClass();
         $("#footer").removeClass();
-        $("#navigation").empty();
         if($("#toolbox").hasClass("hidden") && $("#nav").hasClass("hidden")) {
             $("#map").toggleClass("mapFull");
             $("#footer").toggleClass("footerFull");
         } else if($("#toolbox").hasClass("hidden")) {
             $("#map").toggleClass("mapwNav");
             $("#footer").toggleClass("footerwNav");
-            $("#navigation").load("navigation.html");
         } else if($("#nav").hasClass("hidden")) {
             $("#map").toggleClass("mapwTools");
             $("#footer").toggleClass("footerwTools");
         } else {
             $("#map").toggleClass("mapwNavTools");
             $("#footer").toggleClass("footerwNavTools");
-            $("#navigation").load("navigation.html");
         }
     }
         
