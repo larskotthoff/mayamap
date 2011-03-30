@@ -163,6 +163,7 @@
             });
 
             $.getJSON('sites.json', function(data) {
+              $("#navigation").empty();
               $.each(data, function(id, l) {
                 $("#navigation").append('<li><a href="#" onclick="map.setCenter(new OpenLayers.LonLat(' + l[1] + ',' + l[2] + '), 5);">' + l[0] + '</a></li>');
               });
@@ -454,7 +455,7 @@
         <h1>Navigation</h1>
         Search <input type="text" id="search" onkeyup="filter()"></input>
         <ul>
-        <div id="navigation"></div>
+        <div id="navigation">loading...</div>
         </ul>
     </div>
     <div id="toolbox" class="hidden">
