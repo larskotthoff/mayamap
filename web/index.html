@@ -31,31 +31,31 @@
                 projection: "+init=epsg:3857",
                 //projection: "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs",
                 maxExtent: new OpenLayers.Bounds(-20037508.34,-20037508.34,20037508.34,20037508.34),
-                restrictedExtent: new OpenLayers.Bounds(-10018754.17,1689200.14,-9462156.72,2273030.93),
-                resolutions: [305.7481130859375,152.87405654296876,76.43702827148438,38.21851413574219,19.109257067871095,9.554628533935547,4.777314266967774,2.388657133483887]
+                restrictedExtent: new OpenLayers.Bounds(-10797990.61,1459732.27,-9462156.72,2511525.23),
+                resolutions: [611.4962261718750,305.7481130859375,152.87405654296876,76.43702827148438,38.21851413574219,19.109257067871095,9.554628533935547,4.777314266967774,2.388657133483887]
             });
             terrain = new OpenLayers.Layer.XYZ("Terrain",
                     "http://tiles.mayamap.org/tc/terrain/${z}/${x}/${y}.png", {
                         format: 'image/png',
-                        maxResolution: 305.7481130859375,
+                        maxResolution: 611.4962261718750,
                         units: "m",
-                        zoomOffset: 9,
-                        resolutions: [305.7481130859375,152.87405654296876,76.43702827148438,38.21851413574219,19.109257067871095,9.554628533935547,4.777314266967774,2.388657133483887],
+                        zoomOffset: 8,
+                        resolutions: [611.4962261718750,305.7481130859375,152.87405654296876,76.43702827148438,38.21851413574219,19.109257067871095,9.554628533935547,4.777314266967774,2.388657133483887],
                         sphericalMercator: true
             });
             maya = new OpenLayers.Layer.XYZ("Maya",
                     "http://tiles.mayamap.org/tc/maya/${z}/${x}/${y}.png", {
                         format: 'image/png',
-                        zoomOffset: 9,
-                        resolutions: [305.7481130859375,152.87405654296876,76.43702827148438,38.21851413574219,19.109257067871095,9.554628533935547,4.777314266967774,2.388657133483887],
+                        zoomOffset: 8,
+                        resolutions: [611.4962261718750,305.7481130859375,152.87405654296876,76.43702827148438,38.21851413574219,19.109257067871095,9.554628533935547,4.777314266967774,2.388657133483887],
                         sphericalMercator: true
             });
             maya.setIsBaseLayer(false);
             modern = new OpenLayers.Layer.XYZ("Modern",
                     "http://tiles.mayamap.org/tc/modern/${z}/${x}/${y}.png", {
                         format: 'image/png',
-                        zoomOffset: 9,
-                        resolutions: [305.7481130859375,152.87405654296876,76.43702827148438,38.21851413574219,19.109257067871095,9.554628533935547,4.777314266967774,2.388657133483887],
+                        zoomOffset: 8,
+                        resolutions: [611.4962261718750,305.7481130859375,152.87405654296876,76.43702827148438,38.21851413574219,19.109257067871095,9.554628533935547,4.777314266967774,2.388657133483887],
                         sphericalMercator: true
             });
             modern.setIsBaseLayer(false);
@@ -64,7 +64,7 @@
             gsat = new OpenLayers.Layer.Google("Satellite", {
                     type: google.maps.MapTypeId.SATELLITE
             });
-            gsat.MIN_ZOOM_LEVEL = 9;
+            gsat.MIN_ZOOM_LEVEL = 8;
             gsat.MAX_ZOOM_LEVEL = 16;
             //document.write(gsat.RESOLUTIONS);
 
@@ -84,7 +84,7 @@
 
             map.addLayers([modern, maya, annotations, terrain, gsat]);
             if(!map.getCenter()) {
-                map.setCenter(new OpenLayers.LonLat(-9912410.84903, 2031482.35538), 2);
+                map.setCenter(new OpenLayers.LonLat(-9958273.066, 1981951.16106), 0);
             }
             map.events.register("changelayer", map, updateLegend)
             map.events.register("zoomend", map, updateLegend)
