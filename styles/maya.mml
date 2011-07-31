@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map srs="+init=epsg:3857">
+	<Stylesheet src="maya.mss"/>
+
+  <Layer name="mounds" class="mounds" srs="+init=epsg:32616">
+      <Datasource>
+          <Parameter name="type">shape</Parameter>
+          <Parameter name="file">mounds.shp</Parameter>
+      </Datasource>
+  </Layer>
+
+  <Layer name="chultuns" class="chultuns" srs="+init=epsg:32616">
+      <Datasource>
+          <Parameter name="type">shape</Parameter>
+          <Parameter name="file">chultuns.shp</Parameter>
+      </Datasource>
+  </Layer>
+
+  <Layer name="stelae" class="stelae" srs="+init=epsg:32616">
+      <Datasource>
+          <Parameter name="type">shape</Parameter>
+          <Parameter name="file">stelae.shp</Parameter>
+      </Datasource>
+  </Layer>
+
+  <Layer name="structures" class="structures" srs="+init=epsg:32616">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">structures.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="sites" class="lplaces" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">EAAMS.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="sites" class="places" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">EAAMS.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="sites" class="places-hi" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">EAAMS.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+  <!--<Layer name="places-guatemala" class="places" srs="+proj=utm +zone=15 +ellps=clrk66 +datum=NAD27 +units=m +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">sitios arqueologicos.shp</Parameter>
+    </Datasource>
+  </Layer>-->
+
+  <Layer name="structures-lamilpa" class="structures" srs="+proj=utm +zone=16 +ellps=clrk66 +towgs84=-10,158,187,0,0,0,0 +units=m +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">lamilpa-poly.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="structures-bluecreek-p" class="structures" srs="+proj=utm +zone=16 +ellps=clrk66 +towgs84=-10,158,187,0,0,0,0 +units=m +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">BLUE-CRK_poly.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="structures-bedrock-p" class="structures" srs="+proj=utm +zone=16 +ellps=clrk66 +towgs84=-10,158,187,0,0,0,0 +units=m +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">BEDROCK_poly.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+<!--
+  <Layer name="structures-bluecreek" class="structures-outline" srs="+proj=utm +zone=16 +ellps=clrk66 +towgs84=-10,158,187,0,0,0,0 +units=m +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">BLUE-CRK_lin.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="structures-mayan" class="structures-outline" srs="+proj=utm +zone=16 +ellps=clrk66 +towgs84=-10,158,187,0,0,0,0 +units=m +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">MAYAN_lin.shp</Parameter>
+    </Datasource>
+  </Layer>
+-->
+
+</Map>

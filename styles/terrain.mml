@@ -1,0 +1,2414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map srs="+init=epsg:3857">
+        <Stylesheet src="terrain.mss"/>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-86_13-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-86_14-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-86_15-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-86_16-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-87_13-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-87_14-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-87_15-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-87_16-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-87_20-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-87_21-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-88_13-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-88_14-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-88_15-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-88_16-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-88_17-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-88_18-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-88_19-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-88_20-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-88_21-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-89_13-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-89_14-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-89_15-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-89_16-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-89_17-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-89_18-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-89_19-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-89_20-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-89_21-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-90_13-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-90_14-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-90_15-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-90_16-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-90_17-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-90_18-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-90_19-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-90_20-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-90_21-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-91_13-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-91_14-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-91_15-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-91_16-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-91_17-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-91_18-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-91_19-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-91_20-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-91_21-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-92_13-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-92_14-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-92_15-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-92_16-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-92_17-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-92_18-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-92_19-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-92_20-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-93_14-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-93_15-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-93_16-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-93_17-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-93_18-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-93_20-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-94_15-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-94_16-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-94_17-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-94_18-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-95_16-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-95_17-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-95_18-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-96_15-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-96_16-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-96_17-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-96_18-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-96_19-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-97_15-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-97_16-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-97_17-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-97_18-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-97_19-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm" class="elevation" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">gdal</Parameter>
+      <Parameter name="file">srtm_-97_20-3857.tif</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-86_13-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-86_13-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-86_13-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-86_13-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-86_14-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-86_14-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-86_14-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-86_14-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-86_15-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-86_15-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-86_15-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-86_15-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-86_16-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-86_16-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-86_16-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-86_16-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_13-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_13-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_13-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_13-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_14-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_14-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_14-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_14-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_15-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_15-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_15-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_15-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_16-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_16-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_16-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_16-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_20-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_20-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_20-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_20-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_21-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_21-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_21-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-87_21-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_13-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_13-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_13-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_13-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_14-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_14-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_14-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_14-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_15-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_15-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_15-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_15-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_16-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_16-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_16-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_16-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_17-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_17-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_17-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_17-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_18-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_18-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_18-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_18-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_19-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_19-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_19-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_19-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_20-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_20-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_20-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_20-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_21-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_21-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_21-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-88_21-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_13-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_13-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_13-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_13-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_14-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_14-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_14-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_14-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_15-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_15-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_15-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_15-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_16-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_16-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_16-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_16-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_17-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_17-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_17-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_17-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_18-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_18-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_18-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_18-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_19-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_19-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_19-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_19-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_20-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_20-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_20-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_20-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_21-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_21-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_21-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-89_21-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_13-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_13-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_13-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_13-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_14-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_14-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_14-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_14-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_15-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_15-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_15-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_15-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_16-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_16-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_16-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_16-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_17-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_17-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_17-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_17-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_18-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_18-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_18-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_18-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_19-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_19-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_19-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_19-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_20-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_20-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_20-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_20-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_21-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_21-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_21-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-90_21-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_13-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_13-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_13-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_13-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_14-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_14-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_14-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_14-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_15-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_15-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_15-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_15-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_16-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_16-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_16-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_16-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_17-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_17-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_17-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_17-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_18-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_18-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_18-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_18-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_19-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_19-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_19-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_19-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_20-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_20-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_20-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_20-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_21-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_21-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_21-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-91_21-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_13-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_13-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_13-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_13-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_14-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_14-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_14-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_14-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_15-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_15-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_15-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_15-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_16-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_16-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_16-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_16-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_17-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_17-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_17-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_17-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_18-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_18-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_18-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_18-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_19-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_19-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_19-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_19-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_20-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_20-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_20-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-92_20-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_14-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_14-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_14-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_14-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_15-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_15-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_15-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_15-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_16-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_16-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_16-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_16-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_17-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_17-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_17-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_17-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_18-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_18-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_18-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_18-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_20-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_20-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_20-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-93_20-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-94_15-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-94_15-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-94_15-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-94_15-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-94_16-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-94_16-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-94_16-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-94_16-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-94_17-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-94_17-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-94_17-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-94_17-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-94_18-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-94_18-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-94_18-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-94_18-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-95_16-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-95_16-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-95_16-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-95_16-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-95_17-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-95_17-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-95_17-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-95_17-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-95_18-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-95_18-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-95_18-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-95_18-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_15-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_15-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_15-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_15-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_16-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_16-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_16-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_16-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_17-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_17-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_17-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_17-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_18-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_18-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_18-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_18-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_19-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_19-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_19-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-96_19-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_15-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_15-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_15-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_15-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_16-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_16-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_16-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_16-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_17-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_17-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_17-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_17-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_18-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_18-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_18-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_18-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_19-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_19-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_19-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_19-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-5" class="contours-5" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_20-3857-5.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-10" class="contours-10" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_20-3857-10.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-50" class="contours-50" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_20-3857-50.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="srtm-100" class="contours-100" srs="+init=epsg:3857">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">srtm_-97_20-3857-100.shp</Parameter>
+    </Datasource>
+  </Layer>
+<Layer name="water" class="water" srs="+proj=longlat +ellps=clrk66 +datum=NAD27 +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">water-simplified.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="coastline" class="coastline" srs="+proj=longlat +ellps=clrk66 +datum=NAD27 +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">water-coastline.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="rivers-belize-border" class="rivers-border" srs="+proj=utm +zone=16 +ellps=clrk66 +units=m +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">aqu_ecol_sys.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="rivers-guatemala-border" class="rivers-border" srs="+proj=utm +zone=15 +ellps=clrk66 +datum=NAD27 +units=m +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">rios.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="rivers-mexico-border" class="rivers-border" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">rivers.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="rivers-honduras-border" class="rivers-border" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">HND_water_lines_dcw.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="rivers-belize" class="rivers" srs="+proj=utm +zone=16 +ellps=clrk66 +units=m +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">aqu_ecol_sys.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="rivers-guatemala" class="rivers" srs="+proj=utm +zone=15 +ellps=clrk66 +datum=NAD27 +units=m +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">rios.shp</Parameter>
+    </Datasource>
+  </Layer>
+  
+  <Layer name="rivers-mexico" class="rivers" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">rivers.shp</Parameter>
+    </Datasource>
+  </Layer>
+  
+  <Layer name="rivers-honduras" class="rivers" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">HND_water_lines_dcw.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
