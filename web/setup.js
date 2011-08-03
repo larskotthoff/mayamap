@@ -51,12 +51,18 @@ function init() {
     modern.setIsBaseLayer(false);
     modern.setVisibility(false);
 
-    gsat = new OpenLayers.Layer.Google("Satellite", {
+    gsat = new OpenLayers.Layer.Google("Google Satellite", {
             type: google.maps.MapTypeId.SATELLITE
     });
     gsat.MIN_ZOOM_LEVEL = 8;
     gsat.MAX_ZOOM_LEVEL = 16;
     //document.write(gsat.RESOLUTIONS);
+
+    gter = new OpenLayers.Layer.Google("Google Terrain", {
+            type: google.maps.MapTypeId.TERRAIN
+    });
+    gter.MIN_ZOOM_LEVEL = 8;
+    gter.MAX_ZOOM_LEVEL = 16;
 
     annotations = new OpenLayers.Layer.Vector("Annotations", {
         strategies: [new OpenLayers.Strategy.Fixed({preload: true})],
@@ -72,7 +78,7 @@ function init() {
     map.addControl(selectControl);
     selectControl.activate();
 
-    map.addLayers([modern, maya, annotations, terrain, gsat]);
+    map.addLayers([modern, maya, annotations, terrain, gter, gsat]);
     if(!map.getCenter()) {
         map.setCenter(new OpenLayers.LonLat(-9958273.066, 1981951.16106), 0);
     }
