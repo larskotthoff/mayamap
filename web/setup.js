@@ -153,10 +153,8 @@ function init() {
     map.addControl(panel);
     
     vControls = $("[id^=OpenLayers.Control.]").not("[id*=ScaleLine]");
-    map.events.on({
-        "mouseover": showControls,
-        "mouseout": hideControls
-    });
+    $("#map").mouseenter(showControls);
+    $("#map").mouseleave(hideControls);
 }
 
 function hideControls() {
