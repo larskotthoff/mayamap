@@ -16,6 +16,27 @@
       </Datasource>
   </Layer>
 
+  <Layer name="chultuns-cbn" class="chultuns" srs="+proj=utm +zone=16 +ellps=clrk66 +towgs84=-10,158,187,0,0,0,0 +units=m +no_defs">
+      <Datasource>
+          <Parameter name="type">shape</Parameter>
+          <Parameter name="file">chultun-cbn.shp</Parameter>
+      </Datasource>
+  </Layer>
+
+  <Layer name="chultuns-gf" class="chultuns" srs="+proj=utm +zone=16 +ellps=clrk66 +towgs84=-10,158,187,0,0,0,0 +units=m +no_defs">
+      <Datasource>
+          <Parameter name="type">shape</Parameter>
+          <Parameter name="file">chultun-gf.shp</Parameter>
+      </Datasource>
+  </Layer>
+
+  <Layer name="chultuns-nn" class="chultuns" srs="+proj=utm +zone=16 +ellps=clrk66 +towgs84=-10,158,187,0,0,0,0 +units=m +no_defs">
+      <Datasource>
+          <Parameter name="type">shape</Parameter>
+          <Parameter name="file">chultun-nn.shp</Parameter>
+      </Datasource>
+  </Layer>
+
   <Layer name="stelae" class="stelae" srs="+init=epsg:32616">
       <Datasource>
           <Parameter name="type">shape</Parameter>
@@ -76,6 +97,41 @@
     <Datasource>
       <Parameter name="type">shape</Parameter>
       <Parameter name="file">BEDROCK_poly.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="structures-brc" class="structures" srs="+proj=utm +zone=16 +ellps=clrk66 +towgs84=-10,158,187,0,0,0,0 +units=m +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">structures-brc.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="structures-bw" class="structures" srs="+proj=utm +zone=16 +ellps=clrk66 +towgs84=-10,158,187,0,0,0,0 +units=m +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">structures-bw.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="structures-cbn" class="structures" srs="+proj=utm +zone=16 +ellps=clrk66 +towgs84=-10,158,187,0,0,0,0 +units=m +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">structures-cbn.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="structures-gf" class="structures" srs="+proj=utm +zone=16 +ellps=clrk66 +towgs84=-10,158,187,0,0,0,0 +units=m +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">structures-gf.shp</Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer name="structures-nn" class="structures" srs="+proj=utm +zone=16 +ellps=clrk66 +towgs84=-10,158,187,0,0,0,0 +units=m +no_defs">
+    <Datasource>
+      <Parameter name="type">shape</Parameter>
+      <Parameter name="file">structures-nn.shp</Parameter>
     </Datasource>
   </Layer>
 
