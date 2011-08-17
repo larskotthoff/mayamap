@@ -1,4 +1,5 @@
 var searching = false;
+var detailed = false;
 var searchTimeout;
 var map, terrain, maya, modern;
 var selectControl;
@@ -155,6 +156,13 @@ function init() {
     vControls = $("[id^=OpenLayers.Control.]").not("[id*=ScaleLine]");
     $("#map").mouseenter(showControls);
     $("#map").mouseleave(hideControls);
+
+    $("#detail").click(function() {
+        detailed = this.checked;
+        if(!searching) {
+            updateNav();
+        }
+    });
 }
 
 function hideControls() {
@@ -292,28 +300,32 @@ function updateLegend() {
 function filter() {
     if(!searching) {
         searching = true;
-        searchTimeout = setTimeout(filterInternal, 700);
+        searchTimeout = setTimeout(updateNav, 700);
     } else {
         clearTimeout(searchTimeout);
-        searchTimeout = setTimeout(filterInternal, 700);
+        searchTimeout = setTimeout(updateNav, 700);
     }
 }
 
-function filterInternal() {
-    if($("#search").val().length > 2) {
-        term = $("#search").val().toLowerCase();
-
-        $("#navigation").find("li").each(function() {
-            if($(this).find("a")[0].innerHTML.search(new RegExp(term, "i")) < 0) {
-                $(this).css('display', 'none');
-            } else {
-                $(this).css('display', '');
+function updateNav() {
+    $("#navigation").empty();
+    term = $("#search").val().toLowerCase();
+    if(term.length > 0) {
+        $.each(sites, function(id, l) {
+            if(l[0].search(new RegExp(term, "i")) >= 0) {
+                appendNav(l);
             }
-        })
-    } else if($("#search").val().length == 0) {
-        $("#navigation").find("li").each(function() {
-            $(this).css('display', '');
-        })
+        });
+    } else {
+        $.each(sites, function(id, l) {
+            appendNav(l);
+        });
     }
     searching = false;
+}
+
+function appendNav(l) {
+    if(!detailed || (l[3] == 1)) {
+        $("#navigation").append('<li><a href="#" onclick="map.setCenter(new OpenLayers.LonLat('+l[1]+','+l[2]+'),'+(5+l[3])+');">'+l[0]+'</a></li>');
+    }
 }

@@ -129,12 +129,13 @@
     </div>
     <div id="nav">
         <h1>Navigation</h1>
-        Search <input type="text" id="search" onkeyup="filter()"></input>
+        Search <input type="text" id="search" onkeyup="filter()"></input><br/>
+        <input type="checkbox" id="detail">show only sites with maps</input>
         <ul>
-        <div id="navigation">loading...</div>
+        <div id="navigation"><center><img src="spinner.gif"/></center></div>
         <script type="text/javascript">
             <!--
-            makeNav();
+            updateNav();
             -->
         </script>
         </ul>
