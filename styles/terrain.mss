@@ -91,126 +91,114 @@ Map
 	text-max-char-angle-delta: 45;
 }
 
-.rivers-border
-{
-	line-color: #0030ff;
-	line-join: bevel;
-	line-cap: butt;
-	line-opacity: 0.8;
-}
-.rivers-border[scale-denominator<100000]
-{
-	line-width: 2.1;
-}
-.rivers-border[scale-denominator<100000][SIZE='Small river']
-{
-	line-width: 2.1;
-}
-.rivers-border[scale-denominator<100000][SIZE='Small River']
-{
-	line-width: 2.1;
-}
-.rivers-border[scale-denominator<100000][RANK='Small']
-{
-	line-width: 2.1;
-}
-.rivers-border[scale-denominator<100000][SIZE='Small to large rivers']
-{
-	line-width: 2.6;
-}
-.rivers-border[scale-denominator<100000][RANK='Minor']
-{
-	line-width: 2.6;
-}
-.rivers-border[scale-denominator<100000][SIZE='Medium river']
-{
-	line-width: 3.1;
-}
-.rivers-border[scale-denominator<100000][RANK='Medium']
-{
-	line-width: 3.1;
-}
-.rivers-border[scale-denominator<100000][SIZE='Large river']
-{
-	line-width: 3.6;
-}
-.rivers-border[scale-denominator<100000][SIZE='Headwater stream']
-{
-	line-width: 3.6;
-}
-.rivers-border[scale-denominator<100000][RANK='Major']
-{
-	line-width: 3.6;
-}
-.rivers-border[scale-denominator<100000][RANK='Primary']
-{
-	line-width: 3.6;
-}
-
 .rivers
 {
 	line-color: #0050ff;
 	line-join: bevel;
-	line-cap: butt;
+	line-cap: round;
 	line-opacity: 0.8;
 }
-.rivers[scale-denominator>600000]
-{
-	line-width: 0.5;
-}
-.rivers[scale-denominator>=300000][scale-denominator<=600000]
+.rivers[scale-denominator>1000000]
 {
 	line-width: 0.7;
 }
-.rivers[scale-denominator>=100000][scale-denominator<300000]
+.rivers[scale-denominator>=200000][scale-denominator<=1000000]
 {
-	line-width: 1.5;
+	line-width: 1.3;
 }
-.rivers[scale-denominator<100000]
-{
-	line-width: 1.5;
-}
-.rivers[scale-denominator<100000][SIZE='Small river']
-{
-	line-width: 1.5;
-}
-.rivers[scale-denominator<100000][SIZE='Small River']
-{
-	line-width: 1.5;
-}
-.rivers[scale-denominator<100000][RANK='Small']
-{
-	line-width: 1.5;
-}
-.rivers[scale-denominator<100000][SIZE='Small to large rivers']
-{
-	line-width: 2;
-}
-.rivers[scale-denominator<100000][RANK='Minor']
-{
-	line-width: 2;
-}
-.rivers[scale-denominator<100000][SIZE='Medium river']
-{
-	line-width: 2.5;
-}
-.rivers[scale-denominator<100000][RANK='Medium']
-{
-	line-width: 2.5;
-}
-.rivers[scale-denominator<100000][SIZE='Large river']
+.rivers[scale-denominator>=50000][scale-denominator<200000]
 {
 	line-width: 3;
 }
-.rivers[scale-denominator<100000][SIZE='Headwater stream']
+.rivers[scale-denominator>=50000][scale-denominator<200000][SIZE='Small river']
 {
 	line-width: 3;
 }
-.rivers[scale-denominator<100000][RANK='Major']
+.rivers[scale-denominator>=50000][scale-denominator<200000][SIZE='Small River']
 {
 	line-width: 3;
 }
-.rivers[scale-denominator<100000][RANK='Primary']
+.rivers[scale-denominator>=50000][scale-denominator<200000][RANK='Small']
 {
 	line-width: 3;
+}
+.rivers[scale-denominator>=50000][scale-denominator<200000][SIZE='Small to large rivers']
+{
+	line-width: 3.5;
+}
+.rivers[scale-denominator>=50000][scale-denominator<200000][RANK='Minor']
+{
+	line-width: 3.5;
+}
+.rivers[scale-denominator>=50000][scale-denominator<200000][SIZE='Medium river']
+{
+	line-width: 4;
+}
+.rivers[scale-denominator>=50000][scale-denominator<200000][RANK='Medium']
+{
+	line-width: 4;
+}
+.rivers[scale-denominator>=50000][scale-denominator<200000][SIZE='Large river']
+{
+	line-width: 4.5;
+}
+.rivers[scale-denominator>=50000][scale-denominator<200000][SIZE='Headwater stream']
+{
+	line-width: 4.5;
+}
+.rivers[scale-denominator>=50000][scale-denominator<200000][RANK='Major']
+{
+	line-width: 4.5;
+}
+.rivers[scale-denominator>=50000][scale-denominator<200000][RANK='Primary']
+{
+	line-width: 4.5;
+}
+.rivers[scale-denominator<50000]
+{
+	line-width: 4.5;
+}
+.rivers[scale-denominator<50000][SIZE='Small river']
+{
+	line-width: 4.5;
+}
+.rivers[scale-denominator<50000][SIZE='Small River']
+{
+	line-width: 4.5;
+}
+.rivers[scale-denominator<50000][RANK='Small']
+{
+	line-width: 4.5;
+}
+.rivers[scale-denominator<50000][SIZE='Small to large rivers']
+{
+	line-width: 5.5;
+}
+.rivers[scale-denominator<50000][RANK='Minor']
+{
+	line-width: 5.5;
+}
+.rivers[scale-denominator<50000][SIZE='Medium river']
+{
+	line-width: 6.5;
+}
+.rivers[scale-denominator<50000][RANK='Medium']
+{
+	line-width: 6.5;
+}
+.rivers[scale-denominator<50000][SIZE='Large river']
+{
+	line-width: 7.5;
+}
+.rivers[scale-denominator<50000][SIZE='Headwater stream']
+{
+	line-width: 7.5;
+}
+.rivers[scale-denominator<50000][RANK='Major']
+{
+	line-width: 7.5;
+}
+.rivers[scale-denominator<50000][RANK='Primary']
+{
+	line-width: 8.5;
 }

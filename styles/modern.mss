@@ -15,27 +15,47 @@ Map
 }
 .highways[scale-denominator>=200000][scale-denominator<1000000]
 {
-	line-width: 1;
+	line-width: 1.3;
 }
-.highways[scale-denominator<200000][TYPE='primary']
+.highways[scale-denominator>=60000][scale-denominator<200000][TYPE='primary']
 {
 	line-width: 4;
 }
-.highways[scale-denominator<200000][TYPE='trunk']
+.highways[scale-denominator>=60000][scale-denominator<200000][TYPE='trunk']
 {
 	line-width: 4;
 }
-.highways[scale-denominator<200000][TYPE='secondary']
+.highways[scale-denominator>=60000][scale-denominator<200000][TYPE='secondary']
 {
 	line-width: 3.5;
 }
-.highways[scale-denominator<200000][TYPE='tertiary']
+.highways[scale-denominator>=60000][scale-denominator<200000][TYPE='tertiary']
 {
 	line-width: 2.5;
 }
-.highways[scale-denominator<200000]
+.highways[scale-denominator>=60000][scale-denominator<200000]
 {
 	line-width: 1.5;
+}
+.highways[scale-denominator<60000][TYPE='primary']
+{
+	line-width: 7;
+}
+.highways[scale-denominator<60000][TYPE='trunk']
+{
+	line-width: 7;
+}
+.highways[scale-denominator<60000][TYPE='secondary']
+{
+	line-width: 6;
+}
+.highways[scale-denominator<60000][TYPE='tertiary']
+{
+	line-width: 5;
+}
+.highways[scale-denominator<60000]
+{
+	line-width: 4;
 }
 
 .highways-borders
@@ -44,25 +64,45 @@ Map
 	line-join: round;
 	line-cap: round;
 }
-.highways-borders[scale-denominator<200000][TYPE='primary']
+.highways-borders[scale-denominator>=60000][scale-denominator<200000][TYPE='primary']
 {
 	line-width: 5;
 }
-.highways-borders[scale-denominator<200000][TYPE='trunk']
+.highways-borders[scale-denominator>=60000][scale-denominator<200000][TYPE='trunk']
 {
 	line-width: 5;
 }
-.highways-borders[scale-denominator<200000][TYPE='secondary']
+.highways-borders[scale-denominator>=60000][scale-denominator<200000][TYPE='secondary']
 {
 	line-width: 4.5;
 }
-.highways-borders[scale-denominator<200000][TYPE='tertiary']
+.highways-borders[scale-denominator>=60000][scale-denominator<200000][TYPE='tertiary']
 {
 	line-width: 3.5;
 }
-.highways-borders[scale-denominator<200000]
+.highways-borders[scale-denominator>=60000][scale-denominator<200000]
 {
 	line-width: 2.5;
+}
+.highways-borders[scale-denominator<60000][TYPE='primary']
+{
+	line-width: 8;
+}
+.highways-borders[scale-denominator<60000][TYPE='trunk']
+{
+	line-width: 8;
+}
+.highways-borders[scale-denominator<60000][TYPE='secondary']
+{
+	line-width: 7;
+}
+.highways-borders[scale-denominator<60000][TYPE='tertiary']
+{
+	line-width: 6;
+}
+.highways-borders[scale-denominator<60000]
+{
+	line-width: 5;
 }
 
 .borders

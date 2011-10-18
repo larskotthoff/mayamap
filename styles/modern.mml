@@ -4,145 +4,145 @@
 <Layer name="highways" class="highways-borders" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_belize_highway.shp</Parameter>
+                        <Parameter name="file">belize_highway.shp</Parameter>
                 </Datasource>
         </Layer>
         <Layer name="highways" class="highways" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_belize_highway.shp</Parameter>
+                        <Parameter name="file">belize_highway.shp</Parameter>
                 </Datasource>
         </Layer>
 <Layer name="highways" class="highways-borders" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_el_salvador_highway.shp</Parameter>
+                        <Parameter name="file">el_salvador_highway.shp</Parameter>
                 </Datasource>
         </Layer>
         <Layer name="highways" class="highways" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_el_salvador_highway.shp</Parameter>
+                        <Parameter name="file">el_salvador_highway.shp</Parameter>
                 </Datasource>
         </Layer>
 <Layer name="highways" class="highways-borders" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_guatemala_highway.shp</Parameter>
+                        <Parameter name="file">guatemala_highway.shp</Parameter>
                 </Datasource>
         </Layer>
         <Layer name="highways" class="highways" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_guatemala_highway.shp</Parameter>
+                        <Parameter name="file">guatemala_highway.shp</Parameter>
                 </Datasource>
         </Layer>
 <Layer name="highways" class="highways-borders" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_honduras_highway.shp</Parameter>
+                        <Parameter name="file">honduras_highway.shp</Parameter>
                 </Datasource>
         </Layer>
         <Layer name="highways" class="highways" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_honduras_highway.shp</Parameter>
+                        <Parameter name="file">honduras_highway.shp</Parameter>
                 </Datasource>
         </Layer>
 <Layer name="highways" class="highways-borders" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_nicaragua_highway.shp</Parameter>
+                        <Parameter name="file">mexico_highway.shp</Parameter>
                 </Datasource>
         </Layer>
         <Layer name="highways" class="highways" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_nicaragua_highway.shp</Parameter>
+                        <Parameter name="file">mexico_highway.shp</Parameter>
                 </Datasource>
         </Layer>
 <Layer name="highways" class="highways-borders" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_northern_america_mexico_highway.shp</Parameter>
+                        <Parameter name="file">nicaragua_highway.shp</Parameter>
                 </Datasource>
         </Layer>
         <Layer name="highways" class="highways" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_northern_america_mexico_highway.shp</Parameter>
+                        <Parameter name="file">nicaragua_highway.shp</Parameter>
                 </Datasource>
         </Layer>
 <Layer name="borders" class="borders" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_belize_administrative.shp</Parameter>            
+                        <Parameter name="file">belize_administrative.shp</Parameter>            
                 </Datasource>
         </Layer>
 <Layer name="borders" class="borders" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_el_salvador_administrative.shp</Parameter>            
+                        <Parameter name="file">el_salvador_administrative.shp</Parameter>            
                 </Datasource>
         </Layer>
 <Layer name="borders" class="borders" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_guatemala_administrative.shp</Parameter>            
+                        <Parameter name="file">guatemala_administrative.shp</Parameter>            
                 </Datasource>
         </Layer>
 <Layer name="borders" class="borders" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_honduras_administrative.shp</Parameter>            
+                        <Parameter name="file">honduras_administrative.shp</Parameter>            
                 </Datasource>
         </Layer>
 <Layer name="borders" class="borders" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_nicaragua_administrative.shp</Parameter>            
+                        <Parameter name="file">mexico_administrative.shp</Parameter>            
                 </Datasource>
         </Layer>
 <Layer name="borders" class="borders" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_northern_america_mexico_administrative.shp</Parameter>            
+                        <Parameter name="file">nicaragua_administrative.shp</Parameter>            
                 </Datasource>
         </Layer>
 <Layer name="places" class="places" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_belize_location.shp</Parameter>
+                        <Parameter name="file">belize_location.shp</Parameter>
                 </Datasource>
         </Layer>
 <Layer name="places" class="places" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_el_salvador_location.shp</Parameter>
+                        <Parameter name="file">el_salvador_location.shp</Parameter>
                 </Datasource>
         </Layer>
 <Layer name="places" class="places" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_guatemala_location.shp</Parameter>
+                        <Parameter name="file">guatemala_location.shp</Parameter>
                 </Datasource>
         </Layer>
 <Layer name="places" class="places" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_honduras_location.shp</Parameter>
+                        <Parameter name="file">honduras_location.shp</Parameter>
                 </Datasource>
         </Layer>
 <Layer name="places" class="places" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_central_america_nicaragua_location.shp</Parameter>
+                        <Parameter name="file">mexico_location.shp</Parameter>
                 </Datasource>
         </Layer>
 <Layer name="places" class="places" srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
                 <Datasource>
                         <Parameter name="type">shape</Parameter>
-                        <Parameter name="file">americas_northern_america_mexico_location.shp</Parameter>
+                        <Parameter name="file">nicaragua_location.shp</Parameter>
                 </Datasource>
         </Layer>
 </Map>
